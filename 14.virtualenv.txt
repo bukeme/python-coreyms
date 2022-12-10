@@ -1,0 +1,23 @@
+$ pip install virtualenv # to install virtual environment
+
+$ virtualenv <name of virtual environment> # create virtual environment
+
+$ <name of virtual environment>/Scripts/activate # activate virtual environment
+
+$ which python # to check if it's activated or python runs from the virtual environment
+
+$ which pip # same as above but pip 
+
+$ pip install <package name> # to install packages to environment
+
+$ pip list # to list packages installed in the environment 
+
+$ pip freeze --local > <requirements file> # create a requirements file which contains list of packages installed in environment 
+
+$ deactivate # deactivate virtual environment
+
+$ rm -rf <environment name> # to delete a virtual environment 
+
+$ virtualenv -p /usr/bin/python2.6 <virtual environment name> # to create a virtual environment with specified version of python
+
+
