@@ -1,0 +1,25 @@
+$ pip help #shows help commands 
+
+$ pip help install # pip help <command> show help commands with pip help <command>
+
+$ pip search <package_name> # search for a package 
+
+$ pip install <package_name> # install a package
+
+$ pip list # show list of installed packages
+
+$ pip uninstall <package_name> # uninstall package 
+
+$ pip list -o # check for package that is outdated
+
+$ pip install -U <package_name> # to update a package
+
+$ pip freeze # outputs all of the packages in requirements format
+
+$ pip freeze > requirements.txt # create a requirements.txt file that contains list of install packages
+
+$ pip install -r <requirements file name> # install packages in requirements file 
+
+$ pip list --outdated # shows list of outdated packages
+
+$ pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U 
