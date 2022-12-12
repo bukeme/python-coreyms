@@ -1,0 +1,20 @@
+import os # to import os module 
+
+print(dir(os)) # print out all the attributes and methods we have access to 
+
+print(os.getcwd()) # prints out current working directory
+
+os.chdir('<path>) # change current directory 
+
+print(os.listdir()) # list the files and folders on the current working directory 
+
+print(os.listdir(<path>)) # list the files and folders on the directory passed 
+
+os.mkdir('<name of folder>') # to create a folder in the current directory 
+
+os.mkdirs('<name of folder>/<name of subfolder>/ ...) # creates folder and subfolders in the current directory 
+
+os.rmdir('<folder name'>) # to delete the (one) passed folder 
+os.removedirs('<folder name>/<subfolder name>/..') # delete folder and its specified subfolders 
+
+os.rename('<current name>.<extension>', '<new name>.<extension>')
