@@ -3,7 +3,7 @@
 # from my_module import find_index, test
 # from my_module import find_index as fi, test
 # from my_module import * # import everything
-# import sys
+import sys
 # sys.path.append('/Users/Bassey Ukeme/Desktop')
 # from py_module import find_index, test
 # import random
@@ -18,7 +18,7 @@ courses = ['History', 'Math', 'Physics', 'CompSci']
 # index = find_index(courses, 'Math')
 # print(index)
 # print(test)
-# print(sys.path)
+print(sys.path)
 
 # random_course = random.choice(courses)
 # print(random_course)
@@ -29,4 +29,4 @@ courses = ['History', 'Math', 'Physics', 'CompSci']
 # print(today)
 # print(calendar.isleap(2022))
 # print(os.getcwd())
-print(os.__file__)
+# print(os.__file__)
