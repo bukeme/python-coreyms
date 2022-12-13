@@ -18,3 +18,39 @@ os.rmdir('<folder name'>) # to delete the (one) passed folder
 os.removedirs('<folder name>/<subfolder name>/..') # delete folder and its specified subfolders 
 
 os.rename('<current name>.<extension>', '<new name>.<extension>')
+
+print(os.stat('<file>')) # prints out lots of information about a file 
+
+print(os.stat('<file>').st_size) # prints out the size of the file
+
+print(os.stat('<file>').st_mtime) # prints out the last modified time 
+
+from datetime import datetime 
+
+mod_time = os.stat('<file>').st_mtime 
+print(datetime.fromtimestamp(mod_time)) # prints out the last modified time in human readable format 
+
+for dirpath, dirnames, filenames in os.walk(os.getcwd()):
+    print('Current Path:', dirpath)
+    print('Directories:', dirnames)
+    print('Files:', filenames)
+    print()
+# Prints the directory tree 
+
+file_path = os.path.join(os.environ.get('HOME'), 'test.txt') # join two paths appropriately 
+print(file_path)
+
+print(os.path.basename('/tmp/test.txt')) # prints the basename of a file from a path 
+
+print(os.path.dirname('/tmp/test.txt')) # prints out the directory name 
+
+print(os.path.exists('/tmp/test.txt')) # checks whether the path exist
+
+print(os.path.isdir('/tmp/test.txt')) # checks whether it's a directory
+
+print(os.path.isfile('/tmp/test.txt')) # checks whether it's a file 
+
+print(os.path.splitext('/tmp/test.txt')) # splits the root of the path and it's extension
+
+print(dir(os.path)) # print methods with the os.path module 
+
