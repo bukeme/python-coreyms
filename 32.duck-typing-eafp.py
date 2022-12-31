@@ -1,3 +1,6 @@
+import math
+
+
 class Duck:
     def quack(self):
         print('Quack, quack')
